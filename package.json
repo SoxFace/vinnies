@@ -1,0 +1,15 @@
+{
+  "name": "vinnies",
+  "version": "1.0.0",
+  "description": "vinnies form",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "semanic",
+    "form"
+  ],
+  "author": "sonya corcoran",
+  "license": "ISC"
+}
