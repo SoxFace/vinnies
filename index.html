@@ -12,12 +12,10 @@
     <a class="item" href="form4.html">Form 4</a>
   </div>
   <header>
-    <div class="row logo-row">
-          <div class="col-xs-12 col-sm-6 col-lg-5">   
-            <div class="logo-section">
-              <img class="logo img-responsive visible-xs" alt="St Vincent&rsquo;s Hospital Sydney Logo Mobile" src="https://svhs.org.au/wps/wcm/connect/764ea5a9-9a43-4c23-b9cc-71acf2f38e46/logo-svhs-mobile.png?MOD=AJPERES&CACHEID=764ea5a9-9a43-4c23-b9cc-71acf2f38e46">
-            </div>    
-          </div>
+    <div class="ui grid">
+      <div class="logo-section four wide column"><img class="ui medium image" alt="St Vincent&rsquo;s Hospital Sydney Logo Mobile" src="https://svhs.org.au/wps/wcm/connect/764ea5a9-9a43-4c23-b9cc-71acf2f38e46/logo-svhs-mobile.png?MOD=AJPERES&CACHEID=764ea5a9-9a43-4c23-b9cc-71acf2f38e46"></div>
+      <div class="right floated eight wide column"><h1>St. Vincents Structural Heart Disease Centre</h1></div>
+    </div>
   </header>
   <div class="ui container">
     <h2 class="ui header">
@@ -45,7 +43,7 @@
         <!-- BIRTHDAY -->
         <div class="three fields">
           <div class="field">
-            <input type="text" name="shipping[first-name]" placeholder="Birth Date ( mm / dd / yyyy )">
+            <input type="text" name="shipping[first-name]" placeholder="Birth Date ( dd / mm / yyyy )">
           </div>
           <div class="field">
             <input type="text" name="shipping[last-name]" placeholder="Patient ID / MRN">
@@ -127,30 +125,6 @@
 
             <table class="ui very basic collapsing celled table">
               <tbody>
-                <tr>
-                  <td>
-                    <h4 class="ui image header">
-                      <div class="content">
-                        Permanent Pacemaker
-                    </div>
-                  </h4></td>
-                  <td>
-                    <div class="inline fields">
-                        <div class="field">
-                          <div class="ui checkbox">
-                            <input type="radio" name="fruit" tabindex="0" class="hidden">
-                            <label>Yes</label>
-                          </div>
-                        </div>
-                        <div class="field">
-                          <div class="ui checkbox">
-                            <input type="radio" name="fruit" tabindex="0" class="hidden">
-                            <label>No</label>
-                          </div>
-                        </div>    
-                    </div>
-                  </td>
-                </tr>
                 
                 <tr>
                   <td>
@@ -223,6 +197,108 @@
                     </div>
                   </td>
                 </tr>
+
+                <tr>
+                  <td>
+                    <h4 class="ui image header">
+                      <div class="content">
+                        Prior PCI
+                    </div>
+                  </h4></td>
+                  <td>
+                    <div class="inline fields">
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="radio" name="fruit" tabindex="0" class="hidden">
+                            <label>Yes</label>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="radio" name="fruit" tabindex="0" class="hidden">
+                            <label>No</label>
+                          </div>
+                        </div>    
+                    </div>
+                  </td>
+                  <td>
+                    <h4 class="ui image header">
+                      <div class="content">
+                        If yes, most recent PCI date
+                    </div>
+                  </h4></td>
+                  <td>
+                    <div class="inline fields">
+                        <div class="field">
+                          <input type="text" name="shipping[first-name]" placeholder="dd / mm / yyyy">
+                        </div>    
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <h4 class="ui image header">
+                      <div class="content">
+                        Prior CABG
+                    </div>
+                  </h4></td>
+                  <td>
+                    <div class="inline fields">
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="radio" name="fruit" tabindex="0" class="hidden">
+                            <label>Yes</label>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="radio" name="fruit" tabindex="0" class="hidden">
+                            <label>No</label>
+                          </div>
+                        </div>    
+                    </div>
+                  </td>
+                  <td>
+                    <h4 class="ui image header">
+                      <div class="content">
+                        If yes, most recent CABG date
+                    </div>
+                  </h4></td>
+                  <td>
+                    <div class="inline fields">
+                        <div class="field">
+                          <input type="text" name="shipping[first-name]" placeholder="dd / mm / yyyy">
+                        </div>    
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <h4 class="ui image header">
+                      <div class="content">
+                        Prior Other Cardiac Surgery
+                    </div>
+                  </h4></td>
+                  <td>
+                    <div class="inline fields">
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="radio" name="fruit" tabindex="0" class="hidden">
+                            <label>Yes</label>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="radio" name="fruit" tabindex="0" class="hidden">
+                            <label>No</label>
+                          </div>
+                        </div>    
+                    </div>
+                  </td>
+                </tr>
+
 
                 <tr>
                   <td>
@@ -366,7 +442,7 @@
                   <td>
                     <h4 class="ui image header">
                       <div class="content">
-                        Previous ICD
+                        Previous AICD or PPM
                     </div>
                   </h4></td>
                   <td>
@@ -374,114 +450,19 @@
                         <div class="field">
                           <div class="ui checkbox">
                             <input type="radio" name="fruit" tabindex="0" class="hidden">
-                            <label>Yes</label>
+                            <label>AICD</label>
                           </div>
                         </div>
                         <div class="field">
                           <div class="ui checkbox">
                             <input type="radio" name="fruit" tabindex="0" class="hidden">
-                            <label>No</label>
+                            <label>PPM</label>
                           </div>
-                        </div>    
-                    </div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <h4 class="ui image header">
-                      <div class="content">
-                        Prior PCI
-                    </div>
-                  </h4></td>
-                  <td>
-                    <div class="inline fields">
+                        </div> 
                         <div class="field">
                           <div class="ui checkbox">
                             <input type="radio" name="fruit" tabindex="0" class="hidden">
-                            <label>Yes</label>
-                          </div>
-                        </div>
-                        <div class="field">
-                          <div class="ui checkbox">
-                            <input type="radio" name="fruit" tabindex="0" class="hidden">
-                            <label>No</label>
-                          </div>
-                        </div>    
-                    </div>
-                  </td>
-                  <td>
-                    <h4 class="ui image header">
-                      <div class="content">
-                        If yes, most recent PCI date
-                    </div>
-                  </h4></td>
-                  <td>
-                    <div class="inline fields">
-                        <div class="field">
-                          <input type="text" name="shipping[first-name]" placeholder="mm / dd / yyyy">
-                        </div>    
-                    </div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <h4 class="ui image header">
-                      <div class="content">
-                        Prior CABG
-                    </div>
-                  </h4></td>
-                  <td>
-                    <div class="inline fields">
-                        <div class="field">
-                          <div class="ui checkbox">
-                            <input type="radio" name="fruit" tabindex="0" class="hidden">
-                            <label>Yes</label>
-                          </div>
-                        </div>
-                        <div class="field">
-                          <div class="ui checkbox">
-                            <input type="radio" name="fruit" tabindex="0" class="hidden">
-                            <label>No</label>
-                          </div>
-                        </div>    
-                    </div>
-                  </td>
-                  <td>
-                    <h4 class="ui image header">
-                      <div class="content">
-                        If yes, most recent CABG date
-                    </div>
-                  </h4></td>
-                  <td>
-                    <div class="inline fields">
-                        <div class="field">
-                          <input type="text" name="shipping[first-name]" placeholder="mm / dd / yyyy">
-                        </div>    
-                    </div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <h4 class="ui image header">
-                      <div class="content">
-                        Prior Other Cardiac Surgery
-                    </div>
-                  </h4></td>
-                  <td>
-                    <div class="inline fields">
-                        <div class="field">
-                          <div class="ui checkbox">
-                            <input type="radio" name="fruit" tabindex="0" class="hidden">
-                            <label>Yes</label>
-                          </div>
-                        </div>
-                        <div class="field">
-                          <div class="ui checkbox">
-                            <input type="radio" name="fruit" tabindex="0" class="hidden">
-                            <label>No</label>
+                            <label>Neither</label>
                           </div>
                         </div>    
                     </div>
@@ -519,80 +500,6 @@
                           <div class="ui checkbox">
                             <input type="radio" name="fruit" tabindex="0" class="hidden">
                             <label>>= 4</label>
-                          </div>
-                        </div>    
-                    </div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <h4 class="ui image header">
-                      <div class="content">
-                        NYHA Class
-                    </div>
-                  </h4></td>
-                  <td>
-                    <div class="inline fields">
-                        <div class="field">
-                          <div class="ui checkbox">
-                            <input type="radio" name="fruit" tabindex="0" class="hidden">
-                            <label>I</label>
-                          </div>
-                        </div>
-                        <div class="field">
-                          <div class="ui checkbox">
-                            <input type="radio" name="fruit" tabindex="0" class="hidden">
-                            <label>II</label>
-                          </div>
-                        </div> 
-                        <div class="field">
-                          <div class="ui checkbox">
-                            <input type="radio" name="fruit" tabindex="0" class="hidden">
-                            <label>III</label>
-                          </div>
-                        </div> 
-                        <div class="field">
-                          <div class="ui checkbox">
-                            <input type="radio" name="fruit" tabindex="0" class="hidden">
-                            <label>IV</label>
-                          </div>
-                        </div>    
-                    </div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <h4 class="ui image header">
-                      <div class="content">
-                        Conduction Defect
-                    </div>
-                  </h4></td>
-                  <td>
-                    <div class="inline fields">
-                        <div class="field">
-                          <div class="ui checkbox">
-                            <input type="radio" name="fruit" tabindex="0" class="hidden">
-                            <label>None</label>
-                          </div>
-                        </div>
-                        <div class="field">
-                          <div class="ui checkbox">
-                            <input type="radio" name="fruit" tabindex="0" class="hidden">
-                            <label>RBBB</label>
-                          </div>
-                        </div> 
-                        <div class="field">
-                          <div class="ui checkbox">
-                            <input type="radio" name="fruit" tabindex="0" class="hidden">
-                            <label>LBBB</label>
-                          </div>
-                        </div> 
-                        <div class="field">
-                          <div class="ui checkbox">
-                            <input type="radio" name="fruit" tabindex="0" class="hidden">
-                            <label>Other</label>
                           </div>
                         </div>    
                     </div>
@@ -639,7 +546,7 @@
                 <td>
                   <div class="inline fields">
                     <div class="field">
-                      <input type="text" name="shipping[first-name]" placeholder="mm / dd / yyyy">
+                      <input type="text" name="shipping[first-name]" placeholder="dd / mm / yyyy">
                     </div>    
                   </div>
                 </td>
@@ -768,6 +675,43 @@
                 <td>
                   <h4 class="ui image header">
                     <div class="content">
+                     Chronic Lung Disease
+                  </div>
+                </h4></td>
+                <td>
+                  <div class="inline fields">
+                      <div class="field">
+                        <div class="ui checkbox">
+                          <input type="radio" name="fruit" tabindex="0" class="hidden">
+                          <label>None</label>
+                        </div>
+                      </div>
+                      <div class="field">
+                        <div class="ui checkbox">
+                          <input type="radio" name="fruit" tabindex="0" class="hidden">
+                          <label>Mild</label>
+                        </div>
+                      </div>   
+                      <div class="field">
+                        <div class="ui checkbox">
+                          <input type="radio" name="fruit" tabindex="0" class="hidden">
+                          <label>Moderate</label>
+                        </div>
+                      </div>
+                      <div class="field">
+                        <div class="ui checkbox">
+                          <input type="radio" name="fruit" tabindex="0" class="hidden">
+                          <label>Severe</label>
+                        </div>
+                      </div>    
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <h4 class="ui image header">
+                    <div class="content">
                      Hypertension
                   </div>
                 </h4></td>
@@ -883,7 +827,7 @@
                 <td>
                   <h4 class="ui image header">
                     <div class="content">
-                     Chronic Lung Disease
+                     Hostile Chest
                   </div>
                 </h4></td>
                 <td>
@@ -891,25 +835,13 @@
                       <div class="field">
                         <div class="ui checkbox">
                           <input type="radio" name="fruit" tabindex="0" class="hidden">
-                          <label>None</label>
+                          <label>Yes</label>
                         </div>
                       </div>
                       <div class="field">
                         <div class="ui checkbox">
                           <input type="radio" name="fruit" tabindex="0" class="hidden">
-                          <label>Mild</label>
-                        </div>
-                      </div>   
-                      <div class="field">
-                        <div class="ui checkbox">
-                          <input type="radio" name="fruit" tabindex="0" class="hidden">
-                          <label>Moderate</label>
-                        </div>
-                      </div>
-                      <div class="field">
-                        <div class="ui checkbox">
-                          <input type="radio" name="fruit" tabindex="0" class="hidden">
-                          <label>Severe</label>
+                          <label>No</label>
                         </div>
                       </div>    
                   </div>
@@ -920,7 +852,7 @@
                 <td>
                   <h4 class="ui image header">
                     <div class="content">
-                     Hostile Chest
+                     Previous Radiotherapy
                   </div>
                 </h4></td>
                 <td>
@@ -997,6 +929,83 @@
                   </div>
                 </div>
             </div>
+        </div>
+
+        <div class="ui segment">
+          <h4 class="ui dividing header">5: Functional Status</h4>
+
+          <table class="ui very basic collapsing celled table">
+            <tbody>
+              <tr>
+                <td>
+                  <h4 class="ui image header">
+                    <div class="content">
+                     Poor Mobility
+                  </div>
+                </h4></td>
+                <td>
+                  <div class="inline fields">
+                      <div class="field">
+                        <div class="ui checkbox">
+                          <input type="radio" name="fruit" tabindex="0" class="hidden">
+                          <label>Yes</label>
+                        </div>
+                      </div>
+                      <div class="field">
+                        <div class="ui checkbox">
+                          <input type="radio" name="fruit" tabindex="0" class="hidden">
+                          <label>No</label>
+                        </div>
+                      </div>    
+                  </div>
+                </td>
+              </tr>
+
+               <tr>
+                <td>
+                  <h4 class="ui image header">
+                    <div class="content">
+                     NYHA Class
+                  </div>
+                </h4></td>
+                <td>
+                  <div class="inline fields">
+                      <div class="field">
+                        <div class="ui checkbox">
+                          <input type="radio" name="fruit" tabindex="0" class="hidden">
+                          <label>No shortness of breath (NYHA I)</label>
+                        </div>
+                      </div>
+                      <div class="field">
+                        <div class="ui checkbox">
+                          <input type="radio" name="fruit" tabindex="0" class="hidden">
+                          <label>Mild shortness of breath during ordinary activity (NYHA II)</label>
+                        </div>
+                      </div> 
+                      <div class="field">
+                        <div class="ui checkbox">
+                          <input type="radio" name="fruit" tabindex="0" class="hidden">
+                          <label>Marked shortness of breath (NYHA III)</label>
+                        </div>
+                      </div>
+                      <div class="field">
+                        <div class="ui checkbox">
+                          <input type="radio" name="fruit" tabindex="0" class="hidden">
+                          <label>Severe. Breathless at rest (NYHA IV)</label>
+                        </div>
+                      </div>
+                      <div class="field">
+                        <div class="ui checkbox">
+                          <input type="radio" name="fruit" tabindex="0" class="hidden">
+                          <label>No documented left ventricular dysfunction</label>
+                        </div>
+                      </div>    
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
         </div>
       </div> 
 
